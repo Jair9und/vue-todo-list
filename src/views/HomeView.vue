@@ -53,9 +53,9 @@ const deleteTodo = async (todoId) => {
 
 <template>
     <div>
-        <div>
-            <input type="text" v-model="todoText">
-            <button @click="addTodo(todoText)">Add</button>
+        <div class="flex">
+            <input class="input input-bordered w-full mr-2" type="text" v-model="todoText" placeholder="add todo...">
+            <button class="btn btn-primary" @click="addTodo(todoText)">Add</button>
         </div>
         <div>
             <span v-if="isLoading">Loading...</span>
